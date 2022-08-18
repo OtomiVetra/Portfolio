@@ -1,0 +1,38 @@
+@import "./variables";
+
+.menu {
+  background-color: $light-bg;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 9 * $space 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen {
+  min-height: 100vh;
+}
+
+.avatar {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 3 * $space;
+}
+
+.title-name {
+  margin-bottom: 3 * $space;
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    text-transform: uppercase;
+    padding-top: $space;
+    padding-bottom: $space;
+    &:hover {
+      border-bottom: 1px solid $accent;
+    }
+  }
+}
