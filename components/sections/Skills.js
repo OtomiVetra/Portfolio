@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowLeft, ArrowRight } from "react-bootstrap-icons";
+import { motion } from 'framer-motion'
 
 const skills = [
   {
@@ -30,15 +31,35 @@ const skills = [
 
 ]
 
+const listVariants = {
+  visible: i => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: i * 1,
+    }
+  }),
+  hidden: {
+    opacity: 0,
+    x: +1000,
+  }
+}
+
 const Skills = () => {
   return (
     <div>
       <p className="subtitle">Что я использую в работе</p>
       <h3 className="title">Мои Навыки</h3>
       <div className="skills row">
-        {skills.map((skill) => {
+        {skills.map((skill, i) => {
           return (<div className="col-md-12 col-lg-6" key={skill.title}>
-            <div className="skill card">
+            <motion.div
+              className="skill card"
+              variants={listVariants}
+              initial='hidden'
+              animate='visible'
+              custom={i}
+            >
               <div className="card-header">
                 <span className="icon">{skill.icon}</span>
                 <h4 className="skill-title">{skill.title}</h4>
@@ -47,7 +68,7 @@ const Skills = () => {
                 return (<span key={item} className={"badge " + skill.badgeClass}>{item}</span>)
               })}</div>
               <p className="master-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias porro reiciendis mollitia nihil quas unde doloribus ab fugit eum.</p>
-            </div>
+            </motion.div>
           </div>)
         })}
       </div>

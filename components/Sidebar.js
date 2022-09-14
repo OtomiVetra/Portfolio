@@ -7,10 +7,10 @@ const Sidebar = () => {
         <p className="description">frontend developer</p>
       </div>
       <ul className="links">
-        <li><a href="#about">Обо мне</a></li>
-        <li><a href="#skills">Навыки</a></li>
-        <li><a href="#projects">Проекты</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#about" className="links_item">Обо мне</a></li>
+        <li><a href="#skills" className="links_item">Навыки</a></li>
+        <li><a href="#projects" className="links_item">Проекты</a></li>
+        <li><a href="#contacts" className="links_item">Контакты</a></li>
       </ul>
     </div>
   );
