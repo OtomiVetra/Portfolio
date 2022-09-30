@@ -1,17 +1,19 @@
 .card {
-.links {
-  text-align: center;
-  .btn {
-    width: 80%;
-    margin-bottom: 10px;
+  .links {
+    text-align: center;
+
+    .btn {
+      width: 80%;
+      margin-bottom: 10px;
+    }
   }
-}
 }
 
 @media (min-width: 425px) {
   .card {
     .links {
       text-align: left;
+
       .btn {
         width: auto;
         font-size: 15px;
@@ -19,26 +21,42 @@
         margin-right: 10px;
       }
     }
-    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .menu,
+  .screen {
+    min-height: 100vh;
+  }
+
+  .menu {
+    margin-bottom: 0;
+  }
 }
 
 
 @media (min-width: 992px) {
+
+
   .card {
     .links {
       text-align: center;
+
       .btn {
         width: 80%;
         margin-bottom: 10px;
       }
     }
-    }
+  }
 }
 
 @media (min-width: 1200px) {
   .card {
     .links {
       text-align: left;
+
       .btn {
         width: auto;
         font-size: 15px;
@@ -46,6 +64,5 @@
         margin-right: 10px;
       }
     }
-    }
+  }
 }
-

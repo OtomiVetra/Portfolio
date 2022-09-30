@@ -48,7 +48,6 @@ const listVariants = {
 const Skills = () => {
   return (
     <div>
-      <p className="subtitle">Что я использую в работе</p>
       <h3 className="title">Мои Навыки</h3>
       <div className="skills row">
         {skills.map((skill, i) => {

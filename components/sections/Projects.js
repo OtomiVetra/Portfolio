@@ -58,7 +58,6 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-      <p className="subtitle">Мои свершения</p>
       <h3 className="title">Мои проекты</h3>
       <div className="skills row">
         {projects.map((project) => {
